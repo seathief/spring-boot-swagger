@@ -22,10 +22,10 @@ public class Site {
   private String siteAddres;
 
   @ApiModelProperty(notes = "經度")
-  private String twd97Lon;
+  private double twd97Lon;
 
   @ApiModelProperty(notes = "緯度")
-  private String twd97Lat;
+  private double twd97Lat;
 
   @ApiModelProperty(notes = "測站類型")
   private String siteType;
@@ -78,19 +78,19 @@ public class Site {
     this.siteAddres = siteAddres;
   }
 
-  public String getTwd97Lon() {
+  public double getTwd97Lon() {
     return twd97Lon;
   }
 
-  public void setTwd97Lon(String twd97Lon) {
+  public void setTwd97Lon(double twd97Lon) {
     this.twd97Lon = twd97Lon;
   }
 
-  public String getTwd97Lat() {
+  public double getTwd97Lat() {
     return twd97Lat;
   }
 
-  public void setTwd97Lat(String twd97Lat) {
+  public void setTwd97Lat(double twd97Lat) {
     this.twd97Lat = twd97Lat;
   }
 

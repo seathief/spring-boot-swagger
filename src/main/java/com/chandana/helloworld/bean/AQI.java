@@ -1,7 +1,6 @@
 package com.chandana.helloworld.bean;
 
 import io.swagger.annotations.ApiModelProperty;
-import java.util.Date;
 
 public class AQI {
 
@@ -15,7 +14,7 @@ public class AQI {
   private double co_8hr;
 
   @ApiModelProperty(notes = "縣市(County),文字", required =true)
-  private String country;
+  private String county;
 
   @ApiModelProperty(notes = "一氧化氮(ppb)(NO),數字")
   private double no;
@@ -49,7 +48,7 @@ public class AQI {
       + "微粒、臭氧八小時}")
   private String pollutant;
 
-  @ApiModelProperty(notes = "資料建置日期(DataCreationDate),日期()")
+  @ApiModelProperty(notes = "資料建置日期(DataCreationDate),日期(ISO-8601：YYYY/MM/DD hh:mm)")
   private String publishTime;
 
   @ApiModelProperty(notes = "二氧化硫(ppb)(SO2),數字")
@@ -93,12 +92,12 @@ public class AQI {
     this.co_8hr = co_8hr;
   }
 
-  public String getCountry() {
-    return country;
+  public String getCounty() {
+    return county;
   }
 
-  public void setCountry(String country) {
-    this.country = country;
+  public void setCounty(String county) {
+    this.county = county;
   }
 
   public double getNo() {
